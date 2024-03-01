@@ -1,6 +1,23 @@
 #include "binary_trees.h"
 
 /**
+ * check_leaf - checks if a node is a leaf
+ *
+ * @tree: pointer to a node
+ * Return: 1 0r 0
+ */
+
+size_t check_leaf(const binary_tree_t *tree)
+{
+	size_t count = 0;
+
+	if (tree && !(tree->left) && !(tree->right))
+		count = 1;
+
+	return (count);
+}
+
+/**
  * check_full - checks if a node is full
  *
  * @node: node to check
