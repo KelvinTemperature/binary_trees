@@ -50,5 +50,7 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int check_full(const binary_tree_t *node);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 int height(const binary_tree_t *tree);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+int binary_tree_is_bst(const binary_tree_t *tree);
 
 #endif
